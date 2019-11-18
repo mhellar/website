@@ -286,6 +286,7 @@
                             $(".ajaxpage").fitVids();
                             $(".ajaxpage__slider").unslider();
                             hideLoader();
+                            document.getElementById("divFirst").scrollIntoView();
                         });
                     }
 
