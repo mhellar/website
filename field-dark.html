@@ -51,10 +51,18 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css" />
 
 	<!-- Javascript Libraries -->
-	<script src="js/libraries/jquery-3.2.1.min.js"></script>
+	<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
 	<script src="js/libraries/modernizr-custom.min.js"></script>
 	<script src="js/libraries/velocity.min.js"></script>
 	<script src="js/libraries/three.min.js"></script>
+	<script>
+	function jump(){
+		window.location.hash = "jump_here";
+	}
+	</script>
 </head>
 
 <body>
@@ -82,7 +90,7 @@
 					<li><a href="https://twitter.com/mhellar" target="_blank"><span
 								data-hover="twitter">twitter</span></a></li>
 					<li><a href="https://www.linkedin.com/in/mhellar/" target="_blank"><span
-								data-hover="Linkedin">Linkedin</span></a></li>
+								data-hover="Linkedin">linkedin</span></a></li>
 				</ul>
 			</div>
 
@@ -210,6 +218,7 @@
 					<div class="row initial-position">
 						<div class="col-10 offset-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3 work__content__box first">
 							<h5>Projects</h5>
+							<span id='jump_here'></span>
 							<p>Recent projects</p>
 							<ul class="filters">
 								<li data-filter="*" class="is-checked"><span data-hover="all">all</span></li>
@@ -223,6 +232,7 @@
 					</div>
 
 					<!-- Ajax Section -->
+					
 					<div class="ajax-section clearfix">
 						<div class="ajax-section__loader"></div>
 						<div class="ajax-section__project-navigation">
